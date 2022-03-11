@@ -1,7 +1,9 @@
-const express = require('express')
-const app = express()
+require('dotenv').config();
 
-const port =8080;
+const express = require('express')
+const app = express();
+
+const port =process.env.PORT || 3000;
 const hbs = require('hbs');
 
 
